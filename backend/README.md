@@ -28,12 +28,12 @@ backend/
 
 # SETUP:
 1. Create and activate a virtual environment:
-> python -m venv venv
-> source venv/bin/activate        # macOS/Linux
-> venv\Scripts\activate           # Windows
+> python3 -m venv venv             # try pip if it doesn't work
+> source venv/bin/activate         # macOS/Linux
+> venv\Scripts\activate            # Windows
 
 2. Install dependencies:
-> pip install -r requirements.txt
+> pip3 install -r requirements.txt  # try pip if it doesn't work
 
 3. Make sure postgresql is installed and running
 > brew install postgresql@14
