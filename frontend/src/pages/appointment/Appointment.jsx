@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "../../components/layout/Layout";
 
 function Appointment() {
@@ -8,6 +7,7 @@ function Appointment() {
         <div className="w-full flex items-center gap-10 justify-between md:flex-nowrap flex-wrap">
           <div className="md:w-2/3 w-full rounded-xl overflow-hidden relative">
             <img
+              alt="img"
               src="https://cdn.pixabay.com/photo/2022/02/02/23/26/doctor-6989582_1280.jpg"
               className="w-full md:aspect-[3/4] aspect-[2/3] object-cover object-center"
             />

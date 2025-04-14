@@ -12,7 +12,7 @@ export default function Profile() {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Welcome, {user?.email}</h1>
-      <p className="my-4">This is user's profile dashboard.</p>
+      <p className="my-4">This is user&apos;s profile dashboard.</p>
       <p className="my-4 font-semibold">Profile Details</p>
       <p className="my-4 font-semibold">Appointments</p>
       <p className="my-4 font-semibold">Medical Reports</p>

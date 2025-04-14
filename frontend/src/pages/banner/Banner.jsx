@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "../../components/layout/Layout";
 
 const Banner = () => {
@@ -14,8 +13,8 @@ const Banner = () => {
           <div className="w-full h-full justify-start flex items-center flex-col text-center md:space-y-12 space-y-6">
             <div className="space-y-4">
                 <h1 className="md:text-6xl text-2xl text-neutral-50 font-bold leading-[1.3] capitalize">
-                    Health isn't a luxury — it's a priority. <br className="md:block hidden"/>
-                    Don't make delay on your life!
+                    Health isn&apos;t a luxury — it&apos;s a priority. <br className="md:block hidden"/>
+                    Don&apos;t make delay on your life!
                 </h1>
                 <p className="md:text-lg text-md text-neutral-400 font-normal">
                   Access preventive, emergency, and expert care — all in one place.

@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
+import PropTypes from "prop-types";
 
 function BlogCard({ img, title, desc }) {
   return (
@@ -27,5 +27,11 @@ function BlogCard({ img, title, desc }) {
     </div>
   );
 }
+
+BlogCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+};
 
 export default BlogCard;

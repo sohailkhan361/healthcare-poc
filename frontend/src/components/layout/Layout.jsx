@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 const Layout = ({ children, className }) => {
@@ -17,5 +18,14 @@ const Layout = ({ children, className }) => {
         </motion.div>
     );
 }
+
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+};
+
+Layout.defaultProps = {
+    className: '',
+};
 
 export default Layout

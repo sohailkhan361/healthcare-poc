@@ -1,4 +1,3 @@
-import React from "react";
 import { FiChevronRight } from "react-icons/fi";
 import {HiChevronDoubleRight} from "react-icons/hi";
 import Layout from "../../components/layout/Layout";
