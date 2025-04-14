@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function SpecialistCard({ img, title, totalDoctors }) {
   return (
@@ -26,5 +26,11 @@ function SpecialistCard({ img, title, totalDoctors }) {
     </Link>
   );
 }
+
+SpecialistCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  totalDoctors: PropTypes.number.isRequired,
+};
 
 export default SpecialistCard;

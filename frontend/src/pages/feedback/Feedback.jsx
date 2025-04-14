@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const baseURL = import.meta.env.VITE_REACT_APP_API_BASE_URL;
 
@@ -10,8 +10,6 @@ const Feedback = () => {
     comments: '',
     rating: '',
   });
-
-  const [resMsg, setResMsg] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,7 +38,6 @@ const Feedback = () => {
 
       if (response.ok) {
         alert(`Thank you for your feedback! Feedback ID: ${data.feedback_id}`);
-        setResMsg(data.message);
         setFormData({
           patient_name: '',
           doctor_name: '',

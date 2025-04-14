@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaHandshake } from "react-icons/fa6";
+import PropTypes from "prop-types";
 
 
 const InsuranceCard = ({ logo_url, name, overall_rating, website_url, partner, description }) => {
@@ -30,5 +30,14 @@ const InsuranceCard = ({ logo_url, name, overall_rating, website_url, partner, d
     </Link>
   );
 }
+
+InsuranceCard.propTypes = {
+  logo_url: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  overall_rating: PropTypes.number.isRequired,
+  website_url: PropTypes.string.isRequired,
+  partner: PropTypes.bool,
+  description: PropTypes.string.isRequired,
+};
 
 export default InsuranceCard;

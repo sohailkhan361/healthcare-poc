@@ -1,6 +1,6 @@
-import React from "react";
 import { FaPhone } from "react-icons/fa6";
 import { IoChatbubbles } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 function DoctorCard({ name, img, experience }) {
   return (
@@ -33,5 +33,11 @@ function DoctorCard({ name, img, experience }) {
     </div>
   );
 }
+
+DoctorCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  experience: PropTypes.number.isRequired,
+};
 
 export default DoctorCard;

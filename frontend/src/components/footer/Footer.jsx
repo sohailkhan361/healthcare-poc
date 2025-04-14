@@ -1,14 +1,15 @@
-import React from "react";
 import Layout from "../layout/Layout";
 import { Link } from "react-router-dom";
 import { SiGooglemaps } from "react-icons/si";
-import { FaPhone } from "react-icons/fa6";
+import {
+  FaPhone,
+  FaThreads,
+  FaSquareXTwitter,
+  FaFacebook,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa6";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaThreads } from "react-icons/fa6";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
               to="/"
               className="w-fit text-4xl text-blue-600 font-bold mr-16 flex items-center"
             >
-              <MdOutlineHealthAndSafety className='text-4xl'/> HealthCare+
+              <MdOutlineHealthAndSafety className="text-4xl" /> HealthCare+
             </Link>
 
             <div className="space-y-6">
@@ -50,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
 
-        {/* Company */}
+          {/* Company */}
           <div className="col-span-1 space-y-4">
             <h1 className="text-xl text-neutral-700 font-semibold">Company</h1>
             <ul className="space-y-3">
@@ -97,7 +98,7 @@ const Footer = () => {
             </ul>
           </div>
 
-        {/* Our Services */}
+          {/* Our Services */}
           <div className="col-span-1 space-y-4">
             <h1 className="text-xl text-neutral-700 font-semibold">
               Our Services
@@ -186,7 +187,7 @@ const Footer = () => {
             </ul>
           </div>
 
-        {/* Connect With US */}
+          {/* Connect With US */}
           <div className="md:col-span-1 col-span-2 space-y-4">
             <h1 className="text-xl text-neutral-700 font-semibold">
               Connect With Us
@@ -230,27 +231,29 @@ const Footer = () => {
 
         {/* Copyrights Section */}
         <div className="w-full flex items-center justify-between flex-wrap gap-2">
-            <p className="text-sm text-neutral-600/80 font-normal">
-                Copyright &copy; 2025. All Rights Reserved.
-            </p>
-            <p className="text-sm text-neutral-600/80 font-normal">
-                Developed by Sohail
-            </p>
+          <p className="text-sm text-neutral-600/80 font-normal">
+            Copyright &copy; 2025. All Rights Reserved.
+          </p>
+          <p className="text-sm text-neutral-600/80 font-normal">
+            Developed by Sohail
+          </p>
         </div>
 
         <div className="w-full h-[1px] bg-neutral-300" />
 
         {/* Disclaimer Section */}
         <div className="w-full flex items-center flex-wrap gap-2">
-            <p className="text-sm text-neutral-600/80 font-normal">
-            Disclaimer: <br/>
-            All images displayed in this application are used solely for demonstration purposes as part of a Proof of Concept (POC). 
-            Most images are sourced from royalty-free platforms such as Pixabay and are not intended for commercial distribution. 
-            The health-related information presented is illustrative and does not substitute professional medical advice. 
-            This project is built for showcasing conceptual features only.
-            </p>
+          <p className="text-sm text-neutral-600/80 font-normal">
+            Disclaimer: <br />
+            All images displayed in this application are used solely for
+            demonstration purposes as part of a Proof of Concept (POC). Most
+            images are sourced from royalty-free platforms such as Pixabay and
+            are not intended for commercial distribution. The health-related
+            information presented is illustrative and does not substitute
+            professional medical advice. This project is built for showcasing
+            conceptual features only.
+          </p>
         </div>
-
       </Layout>
     </footer>
   );
