@@ -1,5 +1,5 @@
 
-# Healthcare POC – Backend using ReactJs, TailwindCSS
+# Healthcare POC – Frontend using ReactJs, TailwindCSS
 This is the frontend for the Healthcare Plus Proof of Concept (POC) project.
 
 # Installation
